@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author USER
+ */
+public class main {
+    public static void main(String[] args) {
+        // Membuat objek-objek dengan polimorfisme
+        produk produk1 = new elektronik("Laptop", 15000000, 2);
+        produk produk2 = new makanan("Snack", 15000, "2023-12-30");
+        
+        pegawai pegawai1 = new pegawaiTetap("Budi", 5000000, 1000000);
+        pegawai pegawai2 = new pegawaiKontrak("Andi", 3000000, 12);
+
+        // Menampilkan informasi
+        System.out.println("1. Output Produk");
+        produk1.tampilkanInfo();
+        System.out.println();
+
+        System.out.println("2. Output Pegawai");
+        pegawai1.tampilkanInfo();
+        System.out.println();
+
+        System.out.println("3. Output Polimorfisme");
+        produk2.tampilkanInfo();
+        System.out.println();
+        pegawai2.tampilkanInfo();
+    }
+}
