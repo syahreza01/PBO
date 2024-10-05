@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package praktikum4;
+
+/**
+ *
+ * @author USER
+ */
+public class Main {
+   public static void main(String[] args) {
+      
+        Manusia manusia1 = new Manusia("Budi", 25, "Jakarta");
+        System.out.println("=== Data Manusia ===");
+        System.out.println(manusia1.getInfo());
+        
+        manusia1.setUmur(26);
+        manusia1.setAlamat("Bandung");
+        System.out.println("\nSetelah diubah:");
+        System.out.println(manusia1.getInfo());
+        
+        Pekerja pekerja1 = new Pekerja("Ani", 30, "Surabaya", "Programmer", 8000000.0);
+        System.out.println("\n=== Data Pekerja ===");
+        System.out.println(pekerja1.getInfo());
+        
+        pekerja1.setGaji(8500000.0);
+        pekerja1.setPekerjaan("Senior Programmer");
+        System.out.println("\nSetelah diubah:");
+        System.out.println(pekerja1.getInfo());
+    }
+}
