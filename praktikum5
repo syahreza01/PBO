@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package praktikum5;
+
+/**
+ *
+ * @author USER
+ */
+public class Main {
+   public static void main(String[] args) {
+        // Menguji kelas Hewan dan turunannya
+        System.out.println("=== Informasi Hewan ===");
+        Kucing kucing = new Kucing("Kitty", "Putih");
+        Anjing anjing = new Anjing("Buddy", "Golden Retriever");
+        
+        kucing.tampilkanInfo();
+        System.out.println();
+        anjing.tampilkanInfo();
+        
+        // Menguji hierarki Kendaraan
+        System.out.println("\n=== Informasi Kendaraan ===");
+        Mobil mobil = new Mobil("Toyota", 2022, 4);
+        SepedaMotor motor = new SepedaMotor("Honda", 2023, "4-tak");
+        
+        mobil.tampilkanInfo();
+        System.out.println();
+        motor.tampilkanInfo();
+    }
+}
