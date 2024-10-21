@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author USER
+ */
+public class Main {
+  public static void main(String[] args) {
+        Kendaraan mobil = new Mobil();
+        Kendaraan sepeda = new Sepeda();
+        
+        // Memanggil method untuk mobil
+        mobil.info();
+        mobil.berjalan();
+        
+        // Memanggil method untuk sepeda
+        sepeda.info();
+        sepeda.berjalan();
+    }  
+}
