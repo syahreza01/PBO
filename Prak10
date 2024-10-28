@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package praktikum10;
+
+/**
+ *
+ * @author USER
+ */
+public class Main {
+    public static void main(String[] args) {
+        OperasiHitung tambah = new Penjumlahan();
+        OperasiHitung kurang = new Pengurangan();
+        OperasiHitung kali = new Perkalian();
+        OperasiHitung bagi = new Pembagian();
+        
+        System.out.println("Hasil penjumlahan: " + tambah.hitung(10, 5));  
+        System.out.println("Hasil pengurangan: " + kurang.hitung(10, 5));  
+        System.out.println("Hasil perkalian: " + kali.hitung(10, 5));      
+        System.out.println("Hasil pembagian: " + bagi.hitung(10, 5));      
+    }
+}
